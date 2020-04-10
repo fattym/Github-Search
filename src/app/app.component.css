@@ -1,6 +1,8 @@
 #head1{
   display: flex;
   justify-content: center;
+  font-family: 'Niconne', cursive;
+  font-size: 60px;
 
 }
 #p1{
