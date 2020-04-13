@@ -1,23 +1,26 @@
 # Git search
 
  Date of current version<strong>*: 08/04/2020*</strong>
+ <img src="./src/assets/p.png"  >
 #### By:
 1. Joseph Nganga ; lead developer
 1. Moringa TM's ; Mentors
 1. Moringa Students ; Assistant designers
+
 ## Description
+
 The week's independent project will be evaluated for the following objectives:
-
-* Use Angular CLI to create your Project.
-
-* Create a model for your Quote objects.
-
-* Create a custom directive that highlights the quote that has the highest vote.
-
-* Implement a form component that has input sections for the quote.
-
-* Initialize an initial value of 0 for both upvote and downvote for each quote.
-* Add a custom pipe which displays the time passed since the quote was created.
+*  Project must contain a well-designed landing page that displays your GitHub information such as your username, your profile photos and a list of your repositories.
+* Place your access key inside the environment.ts file and place it inside the gitignore file.
+* Create a HTTP service that uses a promise to make the requests to the GitHub API.
+* The HTTP request should be able to search for both GitHub users and GitHub repositories.
+Your project must have two classes for the user and repository.
+* Project must have a proper routing structure that links a GitHub username to the users GitHub repositories.
+* Project must have a separate routing module.
+* Project must contain a custom directive and a custom pipe.
+Your Project must be well designed and visually appealing and of portfolio quality.
+* Project must have a well-documented README file.
+* Project must be deployed and the deployed link should be submitted.
 
 ## Setup/Installation Requirements
 * Fork the repo
