@@ -1,0 +1,24 @@
+.search-form {
+	padding-top: 50px;
+}
+span,#dis
+{
+  color: aliceblue;
+}
+p
+{
+  color:black;
+}
+#di,.panel-heading{
+  color:lightslategray;
+  display: flex;
+  justify-content: center;
+  font-family: cursive;
+  font-size: 40px;
+}
+.list-group{
+  background-color: none;
+}
+.img-circle{
+  border-radius: 50%;
+}
