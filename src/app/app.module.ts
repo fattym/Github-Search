@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProfileService } from './services/profile.service';
+import { HighlightDirective } from './highlight.directive';
+import { DateAgoPipe } from './pipes/date-ago.pipe';
 
 
 
@@ -17,6 +19,8 @@ import { ProfileService } from './services/profile.service';
     routingComponents,
     NavbarComponent,
     PageNotFoundComponent,
+    HighlightDirective,
+    DateAgoPipe,
   ],
   imports: [
     BrowserModule,
