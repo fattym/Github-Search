@@ -1,14 +1,16 @@
+<div class="container-fluid">
+
 <form action="" class="search-form">
 	<div class="form-group">
-		<input type="text" class="form-control" placeholder="Search git users with username" [(ngModel)]="username" name="username" (keyup)="findProfiles()">
+		<input type="text" class="form-control" placeholder="Search github users profiles" [(ngModel)]="username" name="username" (keyup)="findProfiles()">
 	</div>
 </form>
 <div *ngIf="profiles">
 	<div class="panel panel-default">
 		<div class="panel-heading">
-			{{profiles.name}} <small>({{profiles.login}})</small>
+			<p id="di">{{profiles.name}} <small>({{profiles.login}})</small>
 			<span *ngIf="profiles.company">, Works at {{profiles.company}}</span>
-			{{profiles.location}}
+			{{profiles.location}}</p>
 		</div>
 		<div class="panel-body">
 			<div class="row">
@@ -16,12 +18,12 @@
 					<img src="{{profiles.avatar_url}}" class="img-circle img-responsive" alt="profiles Image">
 				</div>
 				<div class="col-sm-5">
-					<ul class="list-group">
+					<ul class="list-group ">
 						<li class="list-group-item" *ngIf="profiles.bio">{{profiles.bio}}</li>
 						<li class="list-group-item" *ngIf="profiles.hireable">Available for hire</li>
 						<li class="list-agroup-item" *ngIf="profiles.blog"><a href="{{profiles.blog}}" target="_blank">{{profiles.blog}}</a></li>
 						<li class="list-group-item" *ngIf="profiles.email"><a href="emailto:{{profiles.email}}">{{profiles.email}}</a></li>
-					</ul>
+          </ul>
 				</div>
 				<div class="col-sm-4">
 					<div>
@@ -32,20 +34,23 @@
 							<span class="label label-info">{{profiles.public_repos}} Public Repos</span>
 						</p>
 						<p><a href="{{profiles.html_url}}" target="_blank" class="btn btn-success btn-sm">View profiles on github</a></p>
-						<div class="panel panel-default">
+				<!-- 		<div class="panel panel-default">
 							<div class="panel-heading">
 								<h3 class="panel-title">Repos</h3>
 							</div>
 							<div class="panel-body" *ngFor="let repo of repos">
 								<p class="clearfix">
-									{{repo.name}} <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-warning pull-right">View this project on github</a>
+									{{repo.name|uppercase}} <a href="{{repo.html_url}}" target="_blank" class="btn btn-sm btn-success pull-right">View this project on github</a>
 								</p>
-								<p>{{repo.description}}</p>
+								<p id="dis">{{repo.description}}</p>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
+
+
 </div>
