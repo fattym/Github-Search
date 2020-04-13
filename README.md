@@ -1,8 +1,10 @@
 # Git search
 
  Date of current version<strong>*: 08/04/2020*</strong>
- <img src="./src/assets/p.png"  >
+ <img src="./src/assets/p.png">
+
 #### By:
+
 1. Joseph Nganga ; lead developer
 1. Moringa TM's ; Mentors
 1. Moringa Students ; Assistant designers
